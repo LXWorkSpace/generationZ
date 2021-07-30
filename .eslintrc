@@ -1,0 +1,56 @@
+{
+
+  "parser": "babel-eslint",
+  // 简化配置相当于  'standard', //使用standard做代码规范 "prettier",
+  "extends": ["prettier/react", "prettier/standard"],
+  "plugins": [
+    "prettier",
+    "react",
+    "react-hooks"
+  ],
+  "env": {
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "prettier/prettier": 1,
+    "no-unused-vars": [0, { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error",
+    // "semi": [2, "always"],
+    // "indent": [
+    //   "error",
+    //   2,
+    //   { 
+    //     "SwitchCase": 1,
+    //   }
+    // ],
+    // "comma-dangle": [
+    //   1, "always-multiline"
+    // ],
+    "new-cap": "off",
+    "newline-after-var": "off",
+    "no-invalid-this": "off",
+    "quotes": [
+      "error",
+      "single",
+      { "avoidEscape": true }
+    ],
+    "guard-for-in": "off",
+    "no-console": "off",
+    "no-undefined": "off",
+    "array-bracket-spacing": "off",
+    "no-unused-expressions": "off",
+    "linebreak-style": "off"
+  },
+  "globals": {
+  }
+}
